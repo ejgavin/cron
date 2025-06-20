@@ -1,0 +1,16 @@
+name: Ping Render Sites
+
+on:
+  schedule:
+    - cron: '*/5 12-21 * * *'  # 8 AM–5 PM Eastern Time (UTC-4)
+  workflow_dispatch:           # Optional: manual trigger
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping musicstreamer
+        run: curl -s https://musicstreamer-2ojd.onrender.com
+
+      - name: Ping ejgsapis
+        run: curl -s https://ejgsapis.onrender.com/api/hi

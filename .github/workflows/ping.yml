@@ -2,7 +2,7 @@ name: Ping Render Sites
 
 on:
   schedule:
-    - cron: '*/5 12-21 * * *'  # 8 AM–5 PM Eastern Time (UTC-4)
+    - cron: '*/1 12-21 * * *'  # 8 AM–5 PM Eastern Time (UTC-4)
   workflow_dispatch:           # Optional: manual trigger
 
 jobs:
